@@ -39,10 +39,17 @@ if ($_POST) {
     }
 
     if(isset($_GET["do"]) && $_GET["do"] == "editar"){
+
+        $imagenVieja = $aClientes[$id]["imagen"];
+
+
         if($_FILES["archivo"]["error"] === UPLOAD_ERR_OK){
             if($aClientes[$id]["imagen"] != ""){
                 unlink("files/". $aClientes[$id]["imagen"]);
            }
+        }
+        else{
+            $nombreImagen = $imagenVieja;
         }
         //actualización
         
