@@ -22,6 +22,7 @@ if (isset($_GET["do"]) && $_GET["do"] == "eliminar"){
     $id="";
 }
 
+
 if ($_POST) {
     $dni = trim($_POST["txtDNI"]);
     $nombre = trim($_POST["txtNombre"]);
