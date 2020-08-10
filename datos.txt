@@ -1,1 +1,1 @@
-[{"dni":"41384334","nombre":"Maximiliano Rivadeneira","telefono":"3816173059","correo":"rivadenneira@gmail.com","imagen":"2020072209073953.jpg"}]
+[{"dni":"41384526","nombre":"Maximiliano","telefono":"3816173059","correo":"hernanbordon112@gmail.com","imagen":"2020081112080406.png"}]

@@ -11,9 +11,9 @@ $id = isset($_GET["id"])? $_GET["id"] : "";   //Estructura condicional ternaria.
 
 $aMsg = array("mensaje" => "", "codigo" => "");
 
-if (isset($_GET["do"]) && $_GET["do"] == "eliminar"){
+if (isset($_GET["id"]) && isset($_GET["do"]) && $_GET["do"] == "eliminar"){
     if($aClientes[$id]["imagen"] != ""){
-        unlink("files/". $aClientes[$id]["imagen"]);
+        unlink("files/".$aClientes[$id]["imagen"]);
     }
     unset($aClientes[$id]);
     $aMsg = array("mensaje" => "Cliente eliminado correctamente", "codigo" => "danger");
